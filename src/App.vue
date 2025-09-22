@@ -10,6 +10,7 @@
     import headPart from './components/headPart.vue';
     //引入固钉
     import { ElAffix } from 'element-plus';
+    import { provide } from 'vue';
     //引入编程式导航需要的元素
     import { useRouter } from 'vue-router';
     const router=useRouter()
@@ -43,6 +44,7 @@
             timer=setTimeout(() => {
                 timer=null
             }, 500);
+            //随后应该通知headPart组件更改高亮位置
             }
         }
     }

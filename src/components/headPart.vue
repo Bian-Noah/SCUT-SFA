@@ -3,7 +3,7 @@
         <div class="iconContent">图标</div>
         <ElMenu class="menu"
         mode="horizontal"
-        default-active="activeIndex"
+        :default-active="$route.path"
         background-color="#000000"
         text-color="#FFFFFF"
         :ellipsis="false"
@@ -26,8 +26,12 @@
 <script setup>
 //导入菜单组件
     import { ElMenu ,ElMenuItem } from 'element-plus';
-    import { ref } from 'vue';
-    const activeIndex=ref('/')
+    // import { useRoute } from 'vue-router';
+    // const activeIndex=ref('/')//应该监视当前的路径改变\
+    // const path=useRoute().path
+    // watch(path,(newvalue)=>{
+    //     activeIndex.value=newvalue
+    // })
 </script>
 <style scoped>
     .content{

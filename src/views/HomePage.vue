@@ -33,8 +33,8 @@
 <style scoped>
     .homeContent{
         width: 100%;
-        height: 100%;
-        background-image: url(F:\项目\社团网站\ScutSFA\public\ddcdd9476c4394c8ba764aa39932c302.png);
+        height: 91%;
+        background-image: url("public/ddcdd9476c4394c8ba764aa39932c302.png");
         background-size: cover;
     }
     .welcomeArea{
