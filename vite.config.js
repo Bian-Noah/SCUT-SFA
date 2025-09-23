@@ -22,7 +22,7 @@ export default defineConfig({
       // options
     }),
   ],
-  base:"SCUT-SFA",
+  base:"/SCUT-SFA/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

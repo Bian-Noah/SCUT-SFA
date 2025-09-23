@@ -34,7 +34,7 @@
     .homeContent{
         width: 100%;
         height: 91%;
-        background-image: url("public/ddcdd9476c4394c8ba764aa39932c302.png");
+        background-image: url("/ddcdd9476c4394c8ba764aa39932c302.png");
         background-size: cover;
     }
     .welcomeArea{
