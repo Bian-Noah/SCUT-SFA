@@ -1,12 +1,16 @@
 <template>
     <div class="all" @wheel="wheeLchangeRoute($event)">
         <ElAffix>
-            <headPart class="headContent"></headPart>
+            <headPart></headPart>
         </ElAffix>
         <RouterView></RouterView>
+        <ElAffix position="bottom">
+            <rootPart class="headContent"></rootPart>
+        </ElAffix>
     </div>
 </template>
 <script setup>
+    import rootPart from './components/rootPart.vue';
     import headPart from './components/headPart.vue';
     //引入固钉
     import { ElAffix } from 'element-plus';
