@@ -38,7 +38,8 @@
         flex-direction: row;
         justify-content:space-between;
         background-color: black;
-        height: 120px;
+        height: 100%;
+        width: 100%;
     }
     .menu{
         height: 100%;
@@ -49,5 +50,7 @@
     .menuItem{
         margin-left: 5%;
         margin-right: 5%;
+        width: 35%;
+        height: 100%;
     }
 </style>

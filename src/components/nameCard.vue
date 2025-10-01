@@ -18,24 +18,25 @@
     .content{
         display: flex;
         flex-direction: column;
+        align-items: center;
         position: fixed;
         top: 70%;
         left: 60%;
         transform: translate(-70%, -60%);
-        z-index: 2;
+        z-index: 120;
         width: 650px;
     }
     p{
         color: white;
     }
     .Chinese{
-        font-size:17ch;
+        font-size:7vw;
         font-weight: 700;
         padding: 0;
         margin: 0;
     }
     .English{
-        font-size: 6ch;
+        font-size: 2vw;
         padding: 0;
         margin: 0;
     }

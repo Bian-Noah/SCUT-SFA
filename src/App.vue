@@ -1,14 +1,34 @@
 <template>
     <div class="all" @wheel="wheeLchangeRoute($event)">
-        <ElAffix>
+        <ElAffix class="headPart">
             <headPart></headPart>
         </ElAffix>
-        <RouterView></RouterView>
-        <ElAffix position="bottom">
-            <rootPart class="headContent"></rootPart>
+        <RouterView class="contentPart"></RouterView>
+        <ElAffix position="bottom" class="bottomPart">
+            <rootPart class="bottomContent"></rootPart>
         </ElAffix>
     </div>
 </template>
+<style scoped>
+    .all{
+        height: 100%;
+        width: 100%;
+    }
+    .headPart{
+        height: 5%;
+        width: 100%;
+    }
+    .contentPart{
+        height: 85%;
+        width: 100%;
+        z-index: 1;
+    }
+    .bottomPart{
+        height: 10%;
+        width: 100%;
+        z-index: 0;
+    }
+</style>
 <script setup>
     import rootPart from './components/rootPart.vue';
     import headPart from './components/headPart.vue';
@@ -54,9 +74,3 @@
     }
     const wheeLchangeRoute=wheeLchangeRouteMother()
 </script>
-<style scoped>
-    .all{
-        height: 100%;
-        width: 100%;
-    }
-</style>

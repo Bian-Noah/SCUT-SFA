@@ -3,7 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-
+import './utils/rem.js'; //在main.js中引入rem.js
 //导入elementplus内置动画
 import { ElCollapseTransition } from 'element-plus'
 // fade/zoom

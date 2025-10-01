@@ -17,7 +17,7 @@
 <style scoped>
     .homeContent{
         width: 100%;
-        height: 82%;
+        height: 100%;
         background-size: cover;
         background: linear-gradient(#0673A3,#9DCBE1);
     }
@@ -30,16 +30,16 @@
         to{
              top: 10%;
             left: 20%;
-            right: 50%;
+            right: 30%;
         }
     }
     .rocket{
         position: fixed;
-         top: 10%;
+        top: 10%;
         left: 20%;
-        right: 50%;
+        right: 30%;
         animation: RocketAni 0.8s;
-        z-index: 1;
+        z-index: 110;
         transform: rotate(23deg) scale(1.6);
     }
 </style>
